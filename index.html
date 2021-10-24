@@ -96,6 +96,14 @@
       <main class="content">
 
         <h1 id="http4s-dom" class="title">http4s-dom</h1>
+        <p>Use http4s in your browser with Scala.js!
+        Features:</p>
+        <ul>
+          <li>A <a href="https://www.javadoc.io/doc/org.http4s/http4s-dom_sjs1_2.13/latest/org/http4s/dom/FetchClientBuilder.html"><code>Client</code> implementation</a> backed by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"><code>fetch</code></a></li>
+          <li>A <a href="https://www.javadoc.io/doc/org.http4s/http4s-dom_sjs1_2.13/latest/org/http4s/dom/ServiceWorker$.html"><code>Service Worker</code> integration</a> to install your <code>HttpRoutes</code> as a <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch"><code>FetchEvent</code> handler</a></li>
+          <li>Encoders for <a href="https://developer.mozilla.org/en-US/docs/Web/API/File"><code>File</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob"><code>Blob</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream"><code>ReadableStream</code></a></li>
+        </ul>
+        <p>Notably, http4s-dom can also be used to create <em>serverless</em> apps with <a href="https://workers.cloudflare.com">Cloudflare Workers</a> which have adopted the same APIs used in the browser!</p>
         
         <h2 id="installation" class="section">Installation<a class="anchor-link right" href="#installation"><i class="icofont-laika">&#xef71;</i></a></h2>
         <pre class="keep-together pdf epub"><code class="nohighlight"><span class="comment">// Supports http4s 0.23.x and scala-js-dom 2.x
